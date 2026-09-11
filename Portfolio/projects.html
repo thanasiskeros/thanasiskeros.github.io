@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEROS | All Projects</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Εισαγωγή γραμματοσειρών από το Google Fonts (Righteous για τίτλους, Inter για κείμενο) -->
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    
+    <!-- Εισαγωγή FontAwesome για τα εικονίδια -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Το θολό μπεζ background (Εδώ είναι σταθερό για να διαβάζεται η μπάρα) -->
+    <div class="glass-header" style="opacity: 1;"></div>
+
+    <!-- 1. Κουμπί Πίσω (Πάνω Αριστερά) -->
+    <div class="back-btn-container">
+        <a href="index.html" class="menu-btn" style="text-decoration: none;" title="Back to Home"><i class="fa-solid fa-arrow-left"></i></a>
+    </div>
+
+    <!-- 2. Λογότυπο (Πάνω Κέντρο) -->
+    <a href="index.html" class="inner-page-logo" title="Back to Home">
+        <img src="images/keros.PNG" alt="KEROS Logo" style="width: 100%; display: block;">
+    </a>
+
+    <!-- 3. Κουμπί Μενού (Πάνω Δεξιά) -->
+    <div class="top-bar">
+        <button class="menu-btn" id="openMenu">☰</button>
+    </div>
+
+    <!-- ΚΥΡΙΩΣ ΠΕΡΙΕΧΟΜΕΝΟ -->
+    <main class="main-content" style="margin-top: 150px;">
+        
+       <!-- Τίτλος Σελίδας -->
+        <div style="margin-bottom: 60px;">
+            <h1 class="section-title" style="text-align: center;">ALL PROJECTS</h1>
+        </div>
+
+        <!-- ======================================================== -->
+        <!-- ΕΝΟΤΗΤΑ: ΟΛΑ ΤΑ PROJECTS (STACKED CARDS EFFECT) -->
+        <!-- ======================================================== -->
+        <div class="stacked-cards-container" style="margin-top: 0;">
+            
+            <!-- ΚΑΡΤΑ 1 -->
+            <div class="stacked-card card-1" id="project-1">
+                <div class="card-header">
+                    <div class="card-client-info">
+                        <span class="card-number">01</span>
+                        <div class="client-details">
+                            <h4>HIPPIE DRIP</h4>
+                            <p>QR Menu for coffee shop.</p>
+                        </div>
+                    </div>
+                    <a href="#" class="card-btn">LIVE PROJECT</a>
+                </div>
+                <!-- Grid με φωτογραφίες & Βελάκια -->
+                <div class="carousel-wrapper">
+                    <button class="carousel-btn prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="carousel-btn next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                    <div class="card-images-grid">
+                        <img src="images/hip11.png" alt="Mockup 1">
+                        <img src="images/hip2.png" alt="Mockup 2">
+                        <img src="images/hip3.png" alt="Mockup 3">
+                        <img src="images/hip4.png" alt="Mockup 4">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ΚΑΡΤΑ 2 -->
+            <div class="stacked-card card-2" id="project-2">
+                <div class="card-header">
+                    <div class="card-client-info">
+                        <span class="card-number">02</span>
+                        <div class="client-details">
+                            <h4>IRAKLIS RADIO</h4>
+                            <p>Web Radio for athletic news.</p>
+                        </div>
+                    </div>
+                    <a href="#" class="card-btn">LIVE PROJECT</a>
+                </div>
+                <!-- Grid με φωτογραφίες & Βελάκια -->
+                <div class="carousel-wrapper">
+                    <button class="carousel-btn prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="carousel-btn next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                    <div class="card-images-grid">
+                        <img src="images/ira1.png" alt="Mockup 1">
+                        <img src="images/ira2.png" alt="Mockup 2">
+                        <img src="images/ira3.png" alt="Mockup 3">
+                        <img src="images/ira4.png" alt="Mockup 4">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ΚΑΡΤΑ 3 -->
+            <div class="stacked-card card-3" id="project-3">
+                <div class="card-header">
+                    <div class="card-client-info">
+                        <span class="card-number">03</span>
+                        <div class="client-details">
+                            <h4>TRANSISTOR</h4>
+                            <p>Student festival.</p>
+                        </div>
+                    </div>
+                    <a href="#" class="card-btn">LIVE PROJECT</a>
+                </div>
+                <!-- Grid με φωτογραφίες & Βελάκια -->
+                <div class="carousel-wrapper">
+                    <button class="carousel-btn prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="carousel-btn next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                    <div class="card-images-grid">
+                        <img src="images/tr11.png" alt="Mockup 1">
+                        <img src="images/tr2.png" alt="Mockup 2">
+                        <img src="images/tr3.png" alt="Mockup 3">
+                        <img src="images/tr4.png" alt="Mockup 4">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ΝΕΑ ΚΑΡΤΑ 4 (PDA KEROS) -->
+            <div class="stacked-card card-4" id="project-4">
+                <div class="card-header">
+                    <div class="card-client-info">
+                        <span class="card-number">04</span>
+                        <div class="client-details">
+                            <h4>PDA KEROS</h4>
+                            <p>Custom PDA for Coffee/Bar.</p>
+                        </div>
+                    </div>
+                    <a href="#" class="card-btn">LIVE PROJECT</a>
+                </div>
+                <!-- Grid με φωτογραφίες & Βελάκια -->
+                <div class="carousel-wrapper">
+                    <button class="carousel-btn prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="carousel-btn next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                    <div class="card-images-grid">
+                        <!-- Βάλε εδώ τα ονόματα των νέων σου εικόνων/mockups όταν τα έχεις έτοιμα -->
+                        <img src="images/pda1.png" alt="Mockup 1">
+                        <img src="images/pda2.png" alt="Mockup 2">
+                        <img src="images/pda3.png" alt="Mockup 3">
+                        <img src="images/pda4.png" alt="Mockup 4">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FOOTER -->
+        <div class="site-footer" style="margin-top: 150px; padding-bottom: 50px;">
+            <div class="footer-copy">
+                &copy; 2026 KEROS. ALL RIGHTS RESERVED. DESIGNED & DEVELOPED WITH PASSION.
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Μενού Πλήρους Οθόνης -->
+    <nav class="fullscreen-menu" id="fullMenu">
+        <button class="close-btn" id="closeMenu">✕</button>
+        <ul class="menu-links">
+            <li><a href="index.html#projects">PROJECTS</a></li>
+            <li><a href="index.html#services">SERVICES</a></li>
+            <li><a href="index.html#about">ABOUT ME</a></li>
+            <li><a href="projects.html">SELECTED WORKS</a></li>
+            <li><a href="index.html#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
