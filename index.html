@@ -5,69 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KEROS | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-<link rel="icon" type="image/png" href="images/12.png">
-    
-    <!-- Εισαγωγή γραμματοσειρών από το Google Fonts (Righteous για τίτλους, Inter για κείμενο) -->
+    <link rel="icon" type="image/png" href="images/ker.png">
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Inter:wght@300;400&display=swap" rel="stylesheet">
-    
-    <!-- Εισαγωγή FontAwesome για τα εικονίδια -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GY9GKH810G"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-GY9GKH810G');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GY9GKH810G"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-GY9GKH810G');
+    </script>
 </head>
 <body>
-
-    <!-- Το θολό μπεζ background που εμφανίζεται ΣΤΑΔΙΑΚΑ στο scroll -->
     <div class="glass-header"></div>
 
-    <!-- Κουμπί Μενού (Πάντα πάνω δεξιά) -->
     <div class="top-bar">
         <button class="menu-btn" id="openMenu">☰</button>
     </div>
 
-    <!-- Το Λογότυπο που κινείται ελεύθερα και λειτουργεί ως κουμπί για την Αρχική -->
     <a href="#" class="hero-logo">
         <img src="images/keros.PNG" alt="KEROS Logo" style="width: 100%; display: block;">
     </a>
     
-    <!-- Το αρχικό κείμενο -->
     <p class="hero-text">Welcome.<br>Scroll for more!</p>
 
-    <!-- Υπόλοιπο Περιεχόμενο (Ξεκινάει πιο κάτω) -->
     <main class="main-content">
-        
-        <!-- Ενότητα Projects -->
         <section class="projects-section" id="projects">
             <div class="black-strip">
                 <div class="gallery-track">
-                    
                     <a href="#project-1" class="gallery-item">
                         <img src="images/hip1.png" alt="Project 1">
                         <span class="item-number">01</span>
                     </a>
-
-                     <a href="#project-2" class="gallery-item">
+                    <a href="#project-2" class="gallery-item">
                         <img src="images/rad1.png" alt="Project 2">
                         <span class="item-number">02</span>
                     </a>
-
                     <a href="#project-3" class="gallery-item">
                         <img src="images/tr1.png" alt="Project 3">
                         <span class="item-number">03</span>
                     </a>
-
                     <a href="projects.html#project-4" class="gallery-item">
                         <img src="images/Untitled_project__1_-removebg-preview.png" alt="Project 4">
                         <span class="item-number">04</span>
                     </a>
-    
                 </div>
             </div>
 
@@ -78,63 +59,51 @@
             </div>
         </section>
 
-        <!-- Ενότητα Services -->
         <section class="content-section" id="services">
             <h2 class="section-title right-aligned">SERVICES</h2>
             
             <div class="services-black-strip">
                 <div class="services-list-dark">
+                    <div class="service-item-dark">
+                        <div class="service-header">
+                            <span class="service-number">01</span>
+                            <h3>CUSTOM DESIGN</h3>
+                        </div>
+                        <div class="service-divider"></div>
+                        <p>Σχεδιάζω και αναπτύσσω μοναδικές ιστοσελίδες (custom-made) από το μηδέν. Χωρίς τον περιορισμό των έτοιμων templates, μετατρέπω τις ιδέες σας σε ένα 100% εξατομικευμένο ψηφιακό περιβάλλον, δίνοντας έμφαση στη λεπτομέρεια και την υψηλή αισθητική.</p>
+                    </div>
                     
                     <div class="service-item-dark">
-    <div class="service-header">
-        <span class="service-number">01</span>
-        <h3>CUSTOM DESIGN</h3>
-    </div>
-    <div class="service-divider"></div>
-    <p>Σχεδιάζω και αναπτύσσω μοναδικές ιστοσελίδες (custom-made) από το μηδέν. Χωρίς τον περιορισμό των έτοιμων templates, μετατρέπω τις ιδέες σας σε ένα 100% εξατομικευμένο ψηφιακό περιβάλλον, δίνοντας έμφαση στη λεπτομέρεια και την υψηλή αισθητική.</p>
-</div>
+                        <div class="service-header">
+                            <span class="service-number">02</span>
+                            <h3>E-COMMERCE / E-SHOPS</h3>
+                        </div>
+                        <div class="service-divider"></div>
+                        <p>Αναλαμβάνω την κατασκευή σύγχρονων και ταχύτατων ηλεκτρονικών καταστημάτων (e-shops). Βασικός μου στόχος είναι η δημιουργία μιας εύχρηστης, ασφαλούς και ευχάριστης εμπειρίας αγορών (UI/UX), η οποία αναδεικνύει τα προϊόντα σας και αυξάνει τις πωλήσεις.</p>
+                    </div>
                     
                     <div class="service-item-dark">
-    <div class="service-header">
-        <span class="service-number">02</span>
-        <h3>E-COMMERCE / E-SHOPS</h3>
-    </div>
-    <div class="service-divider"></div>
-    <p>Αναλαμβάνω την κατασκευή σύγχρονων και ταχύτατων ηλεκτρονικών καταστημάτων (e-shops). Βασικός μου στόχος είναι η δημιουργία μιας εύχρηστης, ασφαλούς και ευχάριστης εμπειρίας αγορών (UI/UX), η οποία αναδεικνύει τα προϊόντα σας και αυξάνει τις πωλήσεις.</p>
-</div>
-                    
-                    <div class="service-item-dark">
-    <div class="service-header">
-        <span class="service-number">03</span>
-        <h3>WEB APPS / TOOLS</h3>
-    </div>
-    <div class="service-divider"></div>
-    <p>Αναπτύσσω διαδραστικές διαδικτυακές εφαρμογές (Web Apps) και ψηφιακά εργαλεία προσαρμοσμένα στις δικές σας ανάγκες. Γράφοντας κώδικα, δημιουργώ λειτουργικές λύσεις (όπως π.χ. ψηφιακά μενού ή interactive πλατφόρμες) που ανταποκρίνονται άψογα σε κάθε συσκευή και κινητό.</p>
-</div>
-                    
+                        <div class="service-header">
+                            <span class="service-number">03</span>
+                            <h3>WEB APPS / TOOLS</h3>
+                        </div>
+                        <div class="service-divider"></div>
+                        <p>Αναπτύσσω διαδραστικές διαδικτυακές εφαρμογές (Web Apps) και ψηφιακά εργαλεία προσαρμοσμένα στις δικές σας ανάγκες. Γράφοντας κώδικα, δημιουργώ λειτουργικές λύσεις (όπως π.χ. ψηφιακά μενού ή interactive πλατφόρμες) που ανταποκρίνονται άψογα σε κάθε συσκευή και κινητό.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Ενότητα About Me -->
         <section class="content-section" id="about">
-            
             <img src="images/me.jpeg" alt="Graphic" class="about-bg-graphic">
-            
             <h2 class="section-title">ABOUT ME</h2>
-            
             <p class="large-text">Γεια, είμαι ο Θανάσης. Συνδυάζοντας τις σπουδές μου ως Μηχανικός Πληροφορικής με το πάθος μου για το Web Development, δημιουργώ custom ιστοσελίδες και εφαρμογές. Αγαπώ την αισθητική όσο και την τεχνολογία, και έτσι κώδικα από το μηδέν για να μετατρέπω ιδέες σε ψηφιακές εμπειρίες που ξεχωρίζουν λειτουργικά και οπτικά.</p>
         </section>
 
-        <!-- ======================================================== -->
-        <!-- ΕΝΟΤΗΤΑ: SELECTED WORKS (STACKED CARDS EFFECT) -->
-        <!-- ======================================================== -->
         <section class="content-section" id="works">
             <h2 class="section-title right-aligned">PREVIEW PROJECTS</h2>
             
             <div class="stacked-cards-container">
-                
-                <!-- ΚΑΡΤΑ 1 -->
                 <div class="stacked-card card-1" id="project-1">
                     <div class="card-header">
                         <div class="card-client-info">
@@ -144,7 +113,6 @@
                                 <p>QR Menu for coffee shop.</p>
                             </div>
                         </div>
-                        <!-- ΑΛΛΑΓΗ: Το Λογότυπο αντί για κουμπί -->
                         <a href="#" class="card-logo-btn">
                             <img src="images/hip1.png" alt="Hippie Drip">
                         </a>
@@ -161,7 +129,6 @@
                     </div>
                 </div>
                 
-                <!-- ΚΑΡΤΑ 2 -->
                 <div class="stacked-card card-2" id="project-2">
                     <div class="card-header">
                         <div class="card-client-info">
@@ -171,7 +138,6 @@
                                 <p>Web Radio for athletic news.</p>
                             </div>
                         </div>
-                        <!-- ΑΛΛΑΓΗ: Το Λογότυπο αντί για κουμπί -->
                         <a href="#" class="card-logo-btn">
                             <img src="images/rad1.png" alt="Iraklis Radio">
                         </a>
@@ -188,7 +154,6 @@
                     </div>
                 </div>
 
-                <!-- ΚΑΡΤΑ 3 -->
                 <div class="stacked-card card-3" id="project-3">
                     <div class="card-header">
                         <div class="card-client-info">
@@ -198,7 +163,6 @@
                                 <p>Student festival.</p>
                             </div>
                         </div>
-                        <!-- ΑΛΛΑΓΗ: Το Λογότυπο αντί για κουμπί -->
                         <a href="#" class="card-logo-btn">
                             <img src="images/tr1.png" alt="Transistor">
                         </a>
@@ -214,7 +178,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
             
             <div class="show-more-container">
@@ -222,18 +185,14 @@
                     VIEW ALL PROJECTS <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
-            
         </section>
 
-        <!-- Ενότητα Contact -->
         <section class="contact-section-dark" id="contact">
-            
             <div class="brutalist-contact-header">
                 <h1 class="brutalist-contact-title">CONTACT</h1>
             </div>
             
             <div class="contact-grid">
-                
                 <div class="contact-info">
                     <h3 class="contact-subtitle">Let's create something great together!</h3>
                     <p class="contact-desc">Start a project? Send me a message or find me on social.</p>
@@ -268,7 +227,6 @@
                 </div>
             </div> 
 
-            <!-- FOOTER -->
             <div class="site-footer">
                 <div class="footer-copy">
                     &copy; 2026 KEROS. ALL RIGHTS RESERVED. DESIGNED & DEVELOPED WITH PASSION.
@@ -278,12 +236,9 @@
                     <img src="images/keros.PNG" alt="KEROS Logo" class="footer-logo">
                 </div>
             </div>
-
         </section> 
-
     </main>
 
-    <!-- Μενού Πλήρους Οθόνης -->
     <nav class="fullscreen-menu" id="fullMenu">
         <button class="close-btn" id="closeMenu">✕</button>
         <ul class="menu-links">
