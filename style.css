@@ -6,7 +6,11 @@
     --scroll: 0; 
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 html, body {
     max-width: 100vw;
@@ -153,7 +157,10 @@ body {
     scrollbar-width: none; 
     scroll-snap-type: x mandatory; 
 }
-.gallery-track::-webkit-scrollbar { display: none; }
+
+.gallery-track::-webkit-scrollbar { 
+    display: none; 
+}
 
 .gallery-item { 
     display: flex; 
@@ -165,14 +172,23 @@ body {
     align-items: center; 
     scroll-snap-align: center; 
 }
-.gallery-item:hover { opacity: 0.7; }
+
+.gallery-item:hover { 
+    opacity: 0.7; 
+}
+
 .gallery-item img { 
     width: 100px; 
     height: 100px; 
     object-fit: contain; 
     margin-bottom: 15px; 
 }
-.item-number { font-size: 0.8rem; font-family: var(--text-font); color: var(--bg-color); }
+
+.item-number { 
+    font-size: 0.8rem; 
+    font-family: var(--text-font); 
+    color: var(--bg-color); 
+}
 
 .services-black-strip {
     background-color: #000000;
@@ -202,18 +218,56 @@ body {
     cursor: default; 
 }
 
-.services-list-dark:hover .service-item-dark { opacity: 0.3; }
-.services-list-dark .service-item-dark:hover {
-    opacity: 1; transform: translateY(-15px); 
+.services-list-dark:hover .service-item-dark { 
+    opacity: 0.3; 
 }
 
-.service-header { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 15px; }
-.service-number { font-family: var(--text-font); font-size: 1rem; font-weight: 700; margin-bottom: 5px; color: var(--bg-color); }
-.service-item-dark h3 { font-family: var(--heading-font); font-size: 2rem; text-transform: uppercase; letter-spacing: -0.5px; margin: 0; color: var(--bg-color); }
-.service-divider { height: 1px; background-color: rgba(239, 235, 224, 0.5); width: 100%; margin-bottom: 15px; }
-.service-item-dark p { font-size: 1.1rem; font-weight: 300; color: var(--bg-color); opacity: 0.8; }
+.services-list-dark .service-item-dark:hover {
+    opacity: 1; 
+    transform: translateY(-15px); 
+}
 
-.content-section { margin-top: 15vh; }
+.service-header { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin-bottom: 15px; 
+}
+
+.service-number { 
+    font-family: var(--text-font); 
+    font-size: 1rem; 
+    font-weight: 700; 
+    margin-bottom: 5px; 
+    color: var(--bg-color); 
+}
+
+.service-item-dark h3 { 
+    font-family: var(--heading-font); 
+    font-size: 2rem; 
+    text-transform: uppercase; 
+    letter-spacing: -0.5px; 
+    margin: 0; 
+    color: var(--bg-color); 
+}
+
+.service-divider { 
+    height: 1px; 
+    background-color: rgba(239, 235, 224, 0.5); 
+    width: 100%; 
+    margin-bottom: 15px; 
+}
+
+.service-item-dark p { 
+    font-size: 1.1rem; 
+    font-weight: 300; 
+    color: var(--bg-color); 
+    opacity: 0.8; 
+}
+
+.content-section { 
+    margin-top: 15vh; 
+}
 
 .section-title {
     font-family: var(--heading-font);
@@ -227,7 +281,9 @@ body {
     letter-spacing: -1px;
 }
 
-.section-title.right-aligned { text-align: right; }
+.section-title.right-aligned { 
+    text-align: right; 
+}
 
 @keyframes floatMobile {
     0%, 100% { transform: translateY(0); }
@@ -292,16 +348,42 @@ body {
     pointer-events: none;
 }
 
-#about .large-text { padding: 20px 45px; margin-top: 30px; }
-#about .large-text::before, #about .large-text::after {
-    font-family: var(--heading-font); font-size: 5rem; font-weight: 700;
-    color: var(--text-color); position: absolute; line-height: 0; 
+#about .large-text { 
+    padding: 20px 45px; 
+    margin-top: 30px; 
 }
-#about .large-text::before { content: '“'; top: 40px; left: -10px; }
-#about .large-text::after { content: '”'; bottom: -10px; right: 0px; }
 
-#works { margin-top: 25vh; }
-.stacked-cards-container { display: flex; flex-direction: column; margin-top: 50px; }
+#about .large-text::before, 
+#about .large-text::after {
+    font-family: var(--heading-font); 
+    font-size: 5rem; 
+    font-weight: 700;
+    color: var(--text-color); 
+    position: absolute; 
+    line-height: 0; 
+}
+
+#about .large-text::before { 
+    content: '“'; 
+    top: 40px; 
+    left: -10px; 
+}
+
+#about .large-text::after { 
+    content: '”'; 
+    bottom: -10px; 
+    right: 0px; 
+}
+
+#works { 
+    margin-top: 25vh; 
+}
+
+.stacked-cards-container { 
+    display: flex; 
+    flex-direction: column; 
+    margin-top: 50px; 
+}
 
 .stacked-card {
     position: sticky;
@@ -319,19 +401,48 @@ body {
 .card-3 { top: 130px; z-index: 3; }
 .card-4 { top: 145px; z-index: 4; } 
 
-.card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; border-bottom: 1px solid rgba(239, 235, 224, 0.1); padding-bottom: 15px; }
-.card-client-info { display: flex; align-items: center; gap: 15px; }
-.card-number { font-family: var(--heading-font); font-size: 3rem; font-weight: 700; line-height: 0.8; }
-.client-details h4 { font-family: var(--heading-font); font-size: 1.1rem; letter-spacing: 1px; margin-bottom: 2px; }
-.client-details p { font-family: var(--text-font); font-size: 0.8rem; font-weight: 300; opacity: 0.7; }
+.card-header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    margin-bottom: 20px; 
+    border-bottom: 1px solid rgba(239, 235, 224, 0.1); 
+    padding-bottom: 15px; 
+}
 
-/* --- FIX: Σωστή εμφάνιση των Λογοτύπων στα δεξιά (όχι πια στρετσαρισμένα) --- */
+.card-client-info { 
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+}
+
+.card-number { 
+    font-family: var(--heading-font); 
+    font-size: 3rem; 
+    font-weight: 700; 
+    line-height: 0.8; 
+}
+
+.client-details h4 { 
+    font-family: var(--heading-font); 
+    font-size: 1.1rem; 
+    letter-spacing: 1px; 
+    margin-bottom: 2px; 
+}
+
+.client-details p { 
+    font-family: var(--text-font); 
+    font-size: 0.8rem; 
+    font-weight: 300; 
+    opacity: 0.7; 
+}
+
 .card-logo-btn {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     height: 45px; 
-    flex-shrink: 0; /* Κλειδώνει το μέγεθος, δεν αφήνει το κείμενο να το συμπιέσει */
+    flex-shrink: 0; 
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -348,18 +459,25 @@ body {
 }
 
 .card-images-grid {
-    display: flex; gap: 15px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 10px; 
-    scrollbar-width: thin; scrollbar-color: rgba(239, 235, 224, 0.3) transparent;
+    display: flex; 
+    gap: 15px; 
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory; 
+    padding-bottom: 10px; 
+    scrollbar-width: thin; 
+    scrollbar-color: rgba(239, 235, 224, 0.3) transparent;
 }
-.card-images-grid::-webkit-scrollbar { display: none; }
 
-/* --- FIX: Σωστή εμφάνιση των mockups (κλείδωμα αναλογίας) --- */
+.card-images-grid::-webkit-scrollbar { 
+    display: none; 
+}
+
 .card-images-grid img {
-    width: 85%; /* Ορίζουμε σταθερό πλάτος */
-    flex: 0 0 auto; /* Σταματάει τα flexbox bugs του Safari */
+    width: 85%; 
+    flex: 0 0 auto; 
     scroll-snap-align: center; 
     height: 220px; 
-    object-fit: contain !important; /* Επιβολή του contain */
+    object-fit: contain !important; 
     object-position: center; 
     border-radius: 10px; 
     border: none; 
@@ -424,139 +542,506 @@ body {
 }
 
 .fullscreen-menu {
-    position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background-color: #C6E0B4; z-index: 9999; display: flex; flex-direction: column; justify-content: center; align-items: center; transform: translateX(100%); transition: transform 0.6s cubic-bezier(0.77, 0.2, 0.05, 1.0); 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100vh; 
+    background-color: #C6E0B4; 
+    z-index: 9999; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    transform: translateX(100%); 
+    transition: transform 0.6s cubic-bezier(0.77, 0.2, 0.05, 1.0); 
 }
-.fullscreen-menu.active { transform: translateX(0); }
-.close-btn { position: absolute; top: 30px; right: 30px; background: none; border: none; font-size: 2.5rem; color: var(--text-color); cursor: pointer; font-weight: 300; }
-.menu-links { list-style: none; text-align: center; }
-.menu-links li { margin: 10px 0; } 
-.menu-links a { font-family: var(--heading-font); font-size: 8vw; color: var(--text-color); text-decoration: none; text-transform: uppercase; font-weight: 700; transition: color 0.3s ease; }
-.menu-links a:hover { color: #ffffff; }
+
+.fullscreen-menu.active { 
+    transform: translateX(0); 
+}
+
+.close-btn { 
+    position: absolute; 
+    top: 30px; 
+    right: 30px; 
+    background: none; 
+    border: none; 
+    font-size: 2.5rem; 
+    color: var(--text-color); 
+    cursor: pointer; 
+    font-weight: 300; 
+}
+
+.menu-links { 
+    list-style: none; 
+    text-align: center; 
+}
+
+.menu-links li { 
+    margin: 10px 0; 
+} 
+
+.menu-links a { 
+    font-family: var(--heading-font); 
+    font-size: 8vw; 
+    color: var(--text-color); 
+    text-decoration: none; 
+    text-transform: uppercase; 
+    font-weight: 700; 
+    transition: color 0.3s ease; 
+}
+
+.menu-links a:hover { 
+    color: #ffffff; 
+}
 
 .contact-section-dark {
-    background-color: #000000; color: var(--bg-color); margin-top: 15vh; padding: 80px 20px 40px 20px; margin-left: -20px; margin-right: -20px; position: relative; overflow: hidden; 
+    background-color: #000000; 
+    color: var(--bg-color); 
+    margin-top: 15vh; 
+    padding: 80px 20px 40px 20px; 
+    margin-left: -20px; 
+    margin-right: -20px; 
+    position: relative; 
+    overflow: hidden; 
 }
-.brutalist-contact-header { width: 100%; display: flex; justify-content: center; margin-bottom: 60px; }
-.brutalist-contact-title { font-family: var(--heading-font); font-size: 14vw; font-weight: 700; color: var(--bg-color); line-height: 0.8; letter-spacing: -1vw; margin: 0; text-transform: uppercase; transform: scaleY(1.3) skewX(-12deg); white-space: nowrap; }
-.contact-grid { display: flex; flex-direction: column; gap: 50px; max-width: 1200px; margin: 0 auto; }
-.contact-info { flex: 1; }
-.contact-subtitle { font-family: var(--heading-font); font-size: 1.5rem; margin-bottom: 10px; }
-.contact-desc { font-size: 1rem; color: var(--bg-color); margin-bottom: 30px; opacity: 0.8; }
-.contact-details { margin-bottom: 40px; font-size: 1rem; font-weight: 700; line-height: 2; font-family: var(--text-font); }
-.contact-details i { color: var(--bg-color); margin-right: 15px; font-size: 1.1rem; }
-.contact-socials h4 { font-family: var(--heading-font); font-size: 1.2rem; margin-bottom: 15px; }
-.social-icons { display: flex; gap: 25px; }
-.social-icons a { color: var(--bg-color); text-decoration: none; font-size: 1.8rem; transition: opacity 0.3s ease; }
-.social-icons a:hover { opacity: 0.5; }
 
-.contact-form-wrapper { flex: 1; }
-.contact-form { display: flex; flex-direction: column; gap: 30px; }
-.contact-form input, .contact-form textarea { width: 100%; background-color: transparent; border: none; border-bottom: 1px solid var(--bg-color); border-radius: 0; padding: 10px 0; color: var(--bg-color); font-family: var(--text-font); font-size: 1rem; outline: none; transition: opacity 0.3s ease; }
-.contact-form input:focus, .contact-form textarea:focus { opacity: 0.7; }
-.contact-form input::placeholder, .contact-form textarea::placeholder { color: var(--bg-color); font-family: var(--heading-font); font-weight: 700; letter-spacing: 0.5px; opacity: 0.6; }
-.contact-form textarea { resize: vertical; min-height: 40px; }
-.contact-form button { background-color: var(--bg-color); color: #000000; border: none; border-radius: 8px; padding: 12px 15px; font-family: var(--heading-font); font-size: 1.1rem; font-weight: 700; cursor: pointer; display: flex; justify-content: center; align-items: center; gap: 15px; transition: transform 0.2s ease, opacity 0.3s ease; margin-top: 10px; }
-.contact-form button:hover { opacity: 0.9; transform: translateY(-3px); }
+.brutalist-contact-header { 
+    width: 100%; 
+    display: flex; 
+    justify-content: center; 
+    margin-bottom: 60px; 
+}
 
-.site-footer { display: flex; flex-direction: column; align-items: center; gap: 15px; margin-top: 80px; padding-top: 40px; border-top: 1px solid rgba(239, 235, 224, 0.15); text-align: center; }
-.footer-copy { font-family: var(--text-font); font-size: 0.85rem; color: var(--bg-color); opacity: 0.6; text-transform: uppercase; letter-spacing: 1px; }
-.footer-graphics { display: flex; align-items: center; justify-content: center; gap: 25px; }
-.footer-globe { width: 80px; height: 80px; object-fit: contain; mix-blend-mode: screen; }
-.footer-logo { height: 40px; object-fit: contain; filter: invert(1) brightness(100); opacity: 0.8; }
+.brutalist-contact-title { 
+    font-family: var(--heading-font); 
+    font-size: 14vw; 
+    font-weight: 700; 
+    color: var(--bg-color); 
+    line-height: 0.8; 
+    letter-spacing: -1vw; 
+    margin: 0; 
+    text-transform: uppercase; 
+    transform: scaleY(1.3) skewX(-12deg); 
+    white-space: nowrap; 
+}
 
+.contact-grid { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 50px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
 
-/* ========================================================== */
-/* --- 1. RESPONSIVE ΓΙΑ ΚΙΝΗΤΑ (SMARTPHONES) --- */
-/* ========================================================== */
+.contact-info { 
+    flex: 1; 
+}
+
+.contact-subtitle { 
+    font-family: var(--heading-font); 
+    font-size: 1.5rem; 
+    margin-bottom: 10px; 
+}
+
+.contact-desc { 
+    font-size: 1rem; 
+    color: var(--bg-color); 
+    margin-bottom: 30px; 
+    opacity: 0.8; 
+}
+
+.contact-details { 
+    margin-bottom: 40px; 
+    font-size: 1rem; 
+    font-weight: 700; 
+    line-height: 2; 
+    font-family: var(--text-font); 
+}
+
+.contact-details i { 
+    color: var(--bg-color); 
+    margin-right: 15px; 
+    font-size: 1.1rem; 
+}
+
+.contact-socials h4 { 
+    font-family: var(--heading-font); 
+    font-size: 1.2rem; 
+    margin-bottom: 15px; 
+}
+
+.social-icons { 
+    display: flex; 
+    gap: 25px; 
+}
+
+.social-icons a { 
+    color: var(--bg-color); 
+    text-decoration: none; 
+    font-size: 1.8rem; 
+    transition: opacity 0.3s ease; 
+}
+
+.social-icons a:hover { 
+    opacity: 0.5; 
+}
+
+.contact-form-wrapper { 
+    flex: 1; 
+}
+
+.contact-form { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 30px; 
+}
+
+.contact-form input, 
+.contact-form textarea { 
+    width: 100%; 
+    background-color: transparent; 
+    border: none; 
+    border-bottom: 1px solid var(--bg-color); 
+    border-radius: 0; 
+    padding: 10px 0; 
+    color: var(--bg-color); 
+    font-family: var(--text-font); 
+    font-size: 1rem; 
+    outline: none; 
+    transition: opacity 0.3s ease; 
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus { 
+    opacity: 0.7; 
+}
+
+.contact-form input::placeholder, 
+.contact-form textarea::placeholder { 
+    color: var(--bg-color); 
+    font-family: var(--heading-font); 
+    font-weight: 700; 
+    letter-spacing: 0.5px; 
+    opacity: 0.6; 
+}
+
+.contact-form textarea { 
+    resize: vertical; 
+    min-height: 40px; 
+}
+
+.contact-form button { 
+    background-color: var(--bg-color); 
+    color: #000000; 
+    border: none; 
+    border-radius: 8px; 
+    padding: 12px 15px; 
+    font-family: var(--heading-font); 
+    font-size: 1.1rem; 
+    font-weight: 700; 
+    cursor: pointer; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 15px; 
+    transition: transform 0.2s ease, opacity 0.3s ease; 
+    margin-top: 10px; 
+}
+
+.contact-form button:hover { 
+    opacity: 0.9; 
+    transform: translateY(-3px); 
+}
+
+.site-footer { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 15px; 
+    margin-top: 80px; 
+    padding-top: 40px; 
+    border-top: 1px solid rgba(239, 235, 224, 0.15); 
+    text-align: center; 
+}
+
+.footer-copy { 
+    font-family: var(--text-font); 
+    font-size: 0.85rem; 
+    color: var(--bg-color); 
+    opacity: 0.6; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+}
+
+.footer-graphics { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 25px; 
+}
+
+.footer-globe { 
+    width: 80px; 
+    height: 80px; 
+    object-fit: contain; 
+    mix-blend-mode: screen; 
+}
+
+.footer-logo { 
+    height: 40px; 
+    object-fit: contain; 
+    filter: invert(1) brightness(100); 
+    opacity: 0.8; 
+}
+
 @media (max-width: 767px) {
-    .inner-page-logo { width: 75px; top: 32px; }
-    .menu-btn { font-size: 2.2rem; }
-    
+    .inner-page-logo { 
+        width: 75px; 
+        top: 32px; 
+    }
+    .menu-btn { 
+        font-size: 2.2rem; 
+    }
     .gallery-track { 
         justify-content: flex-start; 
         padding: 0 20px; 
         gap: 20px;
     }
-    .gallery-item { min-width: 80px; }
-    .gallery-item img { width: 80px; height: 80px; }
-    
-    .carousel-btn { font-size: 1.8rem; }
-    .prev-btn { left: 0px; }
-    .next-btn { right: 0px; }
-    
-    /* Για τα κινητά, ρυθμίζουμε μικρότερο ύψος αλλά κρατάμε το κλείδωμα */
-    .card-images-grid img { height: 180px; width: 85%; } 
-    .card-number { font-size: 2.5rem; }
-    
-    .brutalist-contact-title { font-size: 16vw; }
-
-    #about { padding-bottom: 420px; }
-    .about-bg-graphic { width: 100%; max-width: none; height: 350px; left: 0; right: 0; margin: 0 auto; object-position: center bottom; bottom: 40px; }
-    #about::after { left: 0; right: 0; margin: 0 auto; width: 80%; bottom: 25px; }
+    .gallery-item { 
+        min-width: 80px; 
+    }
+    .gallery-item img { 
+        width: 80px; 
+        height: 80px; 
+    }
+    .carousel-btn { 
+        font-size: 1.8rem; 
+    }
+    .prev-btn { 
+        left: 0px; 
+    }
+    .next-btn { 
+        right: 0px; 
+    }
+    .card-images-grid img { 
+        height: 180px; 
+        width: 85%; 
+    } 
+    .card-number { 
+        font-size: 2.5rem; 
+    }
+    .brutalist-contact-title { 
+        font-size: 16vw; 
+    }
+    #about { 
+        padding-bottom: 420px; 
+    }
+    .about-bg-graphic { 
+        width: 100%; 
+        max-width: none; 
+        height: 350px; 
+        left: 0; 
+        right: 0; 
+        margin: 0 auto; 
+        object-position: center bottom; 
+        bottom: 40px; 
+    }
+    #about::after { 
+        left: 0; 
+        right: 0; 
+        margin: 0 auto; 
+        width: 80%; 
+        bottom: 25px; 
+    }
 }
 
-/* ========================================================== */
-/* --- 2. RESPONSIVE ΓΙΑ TABLET (Π.χ. iPad) --- */
-/* ========================================================== */
 @media (min-width: 768px) and (max-width: 1023px) {
-    .main-content { padding: 30px 40px 0 40px; }
-    .black-strip, .services-black-strip, .contact-section-dark { padding-left: 40px; padding-right: 40px; margin-left: -40px; margin-right: -40px; }
-    .massive-title { font-size: 16vw; }
-    .section-title { font-size: 6rem; }
-    #about .section-title { padding-right: 150px; }
-    .services-list-dark { flex-direction: column; }
-    #about { padding-bottom: 0; min-height: 400px; justify-content: center; }
-    #about .large-text { max-width: 50vw; }
-    .about-bg-graphic { bottom: auto; top: 50%; transform: translateY(-50%); right: 0; width: 40vw; height: 300px; object-position: right center; animation: floatDesktop 4s ease-in-out infinite; }
-    #about::after { bottom: 40px; right: 5%; width: 35vw; max-width: 250px; height: 15px; }
-    .gallery-track { justify-content: center; padding: 0; }
-    .gallery-item img { width: 130px; height: 130px; } 
-    .card-images-grid img { width: 60%; height: 300px; } 
+    .main-content { 
+        padding: 30px 40px 0 40px; 
+    }
+    .black-strip, 
+    .services-black-strip, 
+    .contact-section-dark { 
+        padding-left: 40px; 
+        padding-right: 40px; 
+        margin-left: -40px; 
+        margin-right: -40px; 
+    }
+    .massive-title { 
+        font-size: 16vw; 
+    }
+    .section-title { 
+        font-size: 6rem; 
+    }
+    #about .section-title { 
+        padding-right: 150px; 
+    }
+    .services-list-dark { 
+        flex-direction: column; 
+    }
+    #about { 
+        padding-bottom: 0; 
+        min-height: 400px; 
+        justify-content: center; 
+    }
+    #about .large-text { 
+        max-width: 50vw; 
+    }
+    .about-bg-graphic { 
+        bottom: auto; 
+        top: 50%; 
+        transform: translateY(-50%); 
+        right: 0; 
+        width: 40vw; 
+        height: 300px; 
+        object-position: right center; 
+        animation: floatDesktop 4s ease-in-out infinite; 
+    }
+    #about::after { 
+        bottom: 40px; 
+        right: 5%; 
+        width: 35vw; 
+        max-width: 250px; 
+        height: 15px; 
+    }
+    .gallery-track { 
+        justify-content: center; 
+        padding: 0; 
+    }
+    .gallery-item img { 
+        width: 130px; 
+        height: 130px; 
+    } 
+    .card-images-grid img { 
+        width: 60%; 
+        height: 300px; 
+    } 
 }
 
-/* ========================================================== */
-/* --- 3. RESPONSIVE ΓΙΑ ΥΠΟΛΟΓΙΣΤΗ (PC & Μεγάλες Οθόνες) --- */
-/* ========================================================== */
 @media (min-width: 1024px) {
-    html { scroll-padding-top: 180px; }
-    .main-content { padding: 40px 80px 0 80px; }
-    .top-bar { top: 40px; right: 80px; }
-    .hero-logo { top: calc(50% - (50% - 30px) * var(--scroll)); left: 50%; }
-    .glass-header { height: 120px; }
-    .back-btn-container { top: 40px; left: 80px; }
-    .inner-page-logo { top: 40px; width: 130px; }
-    .gallery-track { justify-content: center; gap: 80px; padding: 0; }
-    .gallery-item img { width: 150px; height: 150px; }
-    .gallery-item { min-width: 150px; }
-    .massive-title { font-size: 18vw; } 
-    .menu-links a { font-size: 3.5rem; } 
-    .close-btn { top: 40px; right: 80px; }
-    .black-strip { padding: 80px; margin-left: -80px; margin-right: -80px; }
-    .section-title { font-size: 7rem; }
-    #about .section-title { padding-right: 350px; } 
-    .service-item-dark { padding: 40px 30px; }
-    .services-black-strip { padding: 100px 80px; margin-left: -80px; margin-right: -80px; }
-    .services-list-dark { flex-direction: row; gap: 50px; }
-    #about { padding-bottom: 0; min-height: 60vh; justify-content: center; }
-    #about .large-text { max-width: 45vw; }
-    .about-bg-graphic { bottom: auto; top: 50%; transform: translateY(-50%); right: -5%; width: 55vw; max-width: 800px; height: 650px; object-fit: contain; object-position: right center; animation: floatDesktop 4s ease-in-out infinite; }
-    #about::after { bottom: auto; top: calc(50% + 280px); right: 2%; width: 45vw; max-width: 500px; height: 25px; filter: blur(12px); }
-    
-    .stacked-card { padding: 50px; border-radius: 30px; }
+    html { 
+        scroll-padding-top: 180px; 
+    }
+    .main-content { 
+        padding: 40px 80px 0 80px; 
+    }
+    .top-bar { 
+        top: 40px; 
+        right: 80px; 
+    }
+    .hero-logo { 
+        top: calc(50% - (50% - 30px) * var(--scroll)); 
+        left: 50%; 
+    }
+    .glass-header { 
+        height: 120px; 
+    }
+    .back-btn-container { 
+        top: 40px; 
+        left: 80px; 
+    }
+    .inner-page-logo { 
+        top: 40px; 
+        width: 130px; 
+    }
+    .gallery-track { 
+        justify-content: center; 
+        gap: 80px; 
+        padding: 0; 
+    }
+    .gallery-item img { 
+        width: 150px; 
+        height: 150px; 
+    }
+    .gallery-item { 
+        min-width: 150px; 
+    }
+    .massive-title { 
+        font-size: 18vw; 
+    } 
+    .menu-links a { 
+        font-size: 3.5rem; 
+    } 
+    .close-btn { 
+        top: 40px; 
+        right: 80px; 
+    }
+    .black-strip { 
+        padding: 80px; 
+        margin-left: -80px; 
+        margin-right: -80px; 
+    }
+    .section-title { 
+        font-size: 7rem; 
+    }
+    #about .section-title { 
+        padding-right: 350px; 
+    } 
+    .service-item-dark { 
+        padding: 40px 30px; 
+    }
+    .services-black-strip { 
+        padding: 100px 80px; 
+        margin-left: -80px; 
+        margin-right: -80px; 
+    }
+    .services-list-dark { 
+        flex-direction: row; 
+        gap: 50px; 
+    }
+    #about { 
+        padding-bottom: 0; 
+        min-height: 60vh; 
+        justify-content: center; 
+    }
+    #about .large-text { 
+        max-width: 45vw; 
+    }
+    .about-bg-graphic { 
+        bottom: auto; 
+        top: 50%; 
+        transform: translateY(-50%); 
+        right: -5%; 
+        width: 55vw; 
+        max-width: 800px; 
+        height: 650px; 
+        object-fit: contain; 
+        object-position: right center; 
+        animation: floatDesktop 4s ease-in-out infinite; 
+    }
+    #about::after { 
+        bottom: auto; 
+        top: calc(50% + 280px); 
+        right: 2%; 
+        width: 45vw; 
+        max-width: 500px; 
+        height: 25px; 
+        filter: blur(12px); 
+    }
+    .stacked-card { 
+        padding: 50px; 
+        border-radius: 30px; 
+    }
     .card-1 { top: 120px; }
     .card-2 { top: 150px; }
     .card-3 { top: 180px; }
     .card-4 { top: 210px; } 
-    
-    .card-header { margin-bottom: 40px; padding-bottom: 20px; }
-    .card-number { font-size: 7rem; }
-    
-    /* Τα λογότυπα παίρνουν σωστό μέγεθος στα PC */
-    .card-logo-btn { height: 60px; }
-
-    .card-images-grid { display: flex; gap: 30px; }
-    
-    /* Κλείδωμα αναλογίας για τα mockups και στο PC */
+    .card-header { 
+        margin-bottom: 40px; 
+        padding-bottom: 20px; 
+    }
+    .card-number { 
+        font-size: 7rem; 
+    }
+    .card-logo-btn { 
+        height: 60px; 
+    }
+    .card-images-grid { 
+        display: flex; 
+        gap: 30px; 
+    }
     .card-images-grid img { 
         width: 45%; 
         flex: 0 0 auto; 
@@ -564,8 +1049,17 @@ body {
         scroll-snap-align: start; 
         border-radius: 15px; 
     }
-    
-    .contact-section-dark { padding: 100px 80px 40px 80px; margin-left: -80px; margin-right: -80px; }
-    .contact-grid { flex-direction: row; justify-content: space-between; }
-    .brutalist-contact-title { font-size: 12vw; letter-spacing: -0.5vw; }
+    .contact-section-dark { 
+        padding: 100px 80px 40px 80px; 
+        margin-left: -80px; 
+        margin-right: -80px; 
+    }
+    .contact-grid { 
+        flex-direction: row; 
+        justify-content: space-between; 
+    }
+    .brutalist-contact-title { 
+        font-size: 12vw; 
+        letter-spacing: -0.5vw; 
+    }
 }
